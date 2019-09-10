@@ -1,10 +1,45 @@
-body, html {
-  height: 100%;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: lightblue;
+  font-family: 'Ten Mincho', serif;
+  width: 80%;
 }
 
-body {
-  font-family: 'Avenir', sans-serif;
+.header-logo {
+  font-family: 'Leckerli One', cursive;
+}
+
+.header-logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li a:hover {
+  color: #81d7f3;
+}
+
+body, html {
   margin: 0;
-  background-color: #005DFF;
+  font-family: 'Heisei Maru Gothic', sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

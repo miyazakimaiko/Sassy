@@ -1,0 +1,30 @@
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+header {
+    @include flex(space-between);
+    background: lightblue; 
+    font-family: 'Ten Mincho', serif;
+    width: 100% - 20%;
+   }
+   
+   .header-logo {
+       font-family: 'Leckerli One', cursive;
+       a {
+           color: $colorWhite;
+           text-decoration: none;
+       }
+   }
+   
+   .nav-bar ul {
+       display: flex;
+       li a {
+           text-decoration: none;
+           color: $colorWhite;
+           &:hover {
+               color: $hoverColor;
+           }
+       }
+   }
