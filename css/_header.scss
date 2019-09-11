@@ -11,12 +11,13 @@
 header {
     @include flex(space-between);
     @include headerCentered();
-    font-family: 'Ten Mincho', serif;
+    font-family: $fontTsukushi;
     width: 100%;
     background: transparent;
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
     z-index: 2;
 
     .header-logo {
@@ -24,11 +25,11 @@ header {
         a {
             @include headerCentered();
             display: flex;
-            color: $primaryColor;
+            color: $whiteColor;
             text-decoration: none;
             p {
                 @include headerCentered();
-                line-height: 6rem;
+                line-height: 5rem;
                 margin: 0;
                 padding-left: 1rem;
                 img {
@@ -54,10 +55,14 @@ header {
     }
     li a {
         text-decoration: none;
-        color: $primaryColor;
+        color: $whiteColor;
         text-shadow: $textShadow;
         &:hover {
             color: $hoverColor;
         }
     }
+}
+
+.header-animation {
+    background: $blueColor;
 }

@@ -17,14 +17,14 @@
         right: 0;
         width: 100vw;
         height: 30vh;
-        background: linear-gradient(0deg, rgba(7,32,82,1) 0%, rgba(7,32,82,0.95) 5%, rgba(7,32,82,0.90) 10%, rgba(7,32,82,0.85) 15%, rgba(7,32,82,0) 100%);
+        background: linear-gradient(0deg, rgba(7, 32, 70, 1) 0%, rgba(7, 32, 70, 0.98) 5%, rgba(7, 32, 70, 0.96) 10%, rgba(7, 32, 70, 0.94) 15%, rgba(7, 32, 70, 0) 100%);
     }
 
     h1 {
         position: absolute;
         bottom: 9vh;
         right: 13vw;
-        font-family: "Ten Mincho", serif;
+        font-family: $fontSerif;
         color: white;
         font-size: 2.7rem;
         text-shadow: $textShadow;
