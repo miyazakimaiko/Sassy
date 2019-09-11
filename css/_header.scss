@@ -3,28 +3,61 @@
     justify-content: $justify;
 }
 
+@mixin headerCentered() {
+    height: $headerHeight;
+    line-height: $headerHeight;
+}
+
 header {
     @include flex(space-between);
-    background: lightblue; 
+    @include headerCentered();
     font-family: 'Ten Mincho', serif;
-    width: 100% - 20%;
-   }
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .header-logo {
+        font-family: 'Leckerli One', cursive;
+        a {
+            @include headerCentered();
+            display: flex;
+            color: $primaryColor;
+            text-decoration: none;
+            p {
+                @include headerCentered();
+                line-height: 6rem;
+                margin: 0;
+                padding-left: 1rem;
+                img {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+            h1 {
+                margin: 0;
+                padding-left: 1rem;
+                text-shadow: $textShadow;
+            }
+        }
+    }
+
+}
    
-   .header-logo {
-       font-family: 'Leckerli One', cursive;
-       a {
-           color: $colorWhite;
-           text-decoration: none;
-       }
-   }
-   
-   .nav-bar ul {
-       display: flex;
-       li a {
-           text-decoration: none;
-           color: $colorWhite;
-           &:hover {
-               color: $hoverColor;
-           }
-       }
-   }
+.nav-bar ul {
+    display: flex;
+    margin: 0;
+    li {
+        padding-right: 3rem;
+    }
+    li a {
+        text-decoration: none;
+        color: $primaryColor;
+        text-shadow: $textShadow;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+}
