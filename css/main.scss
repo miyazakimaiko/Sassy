@@ -1,9 +1,11 @@
 @import "variables";
 @import "header";
+@import "hero";
 
 body, html {
     margin: 0;
     font-family: 'Heisei Maru Gothic', sans-serif;
+    height: 2000px;
 }
    
 ul {
