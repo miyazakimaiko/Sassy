@@ -1,0 +1,95 @@
+@mixin imagesPosition() {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+@mixin containerPosition() {
+    width: 60vw;
+    margin: 0 auto;
+    padding: 13vh 10vw 13vh 8vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: $blueColor;
+    color: $whiteColor;
+}
+
+.intro {
+    position: relative;
+    background-image: url(../assets/img/p0026.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 200vh;
+    width: 100wv;
+
+    &__container--1 {
+        @include containerPosition();
+        h2 {
+            font-family: $fontSerif;
+            margin: 0 0 10vh 0;
+        }
+        p {
+            padding-bottom: 6vh;
+            line-height: 5vh;
+        }
+    }
+
+    &__container--2 {
+        @include containerPosition();
+        height: 80vh;
+        padding: 13vh 4vw 13vh 18vw;
+
+        li {
+            padding-bottom : 50px;
+        }
+
+        a {
+            width: 320px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 1px solid;
+            font-size: 1.1rem;
+            &:hover {
+                background-color: $blueHover;
+                transition: .3s;
+            }
+        }
+    }
+
+    &__images1 {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+
+        &__img1 {
+            width: 35vw;
+            height: 43vh;
+            object-fit: cover;
+            @include imagesPosition();
+        }
+        &__img2 {
+            width: 27vw;
+            height: 36vh;
+            object-fit: cover;
+            @include imagesPosition();
+        }
+    }
+
+    &__images2 {
+        position: absolute;
+        bottom: 10vh;
+        left: 0;
+
+        &__img3 {
+            width: 35vw;
+            height: 90vh;
+            object-fit: cover;
+            @include imagesPosition();
+        }
+    }
+
+
+}
