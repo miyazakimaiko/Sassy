@@ -1,0 +1,32 @@
+.news {
+    height: 60vh;
+    padding: 10vh 5vw;
+    h2 {
+        text-align: center;
+        font-family: $fontSerif;
+    }
+    &__container {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                width: 20vw;
+                height: 170px;
+                overflow: hidden;
+                a {
+                    img {
+                        width: 20vw;
+                        height: 170px;
+                        object-fit: cover;
+                        overflow: hidden;
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
