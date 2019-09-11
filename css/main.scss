@@ -1,13 +1,9 @@
-@import "variables";
+@import "variables-color";
+@import "variables-fonts";
+@import "variables-length";
+
+@import "general";
 @import "header";
 @import "hero";
-
-body, html {
-    margin: 0;
-    font-family: 'Heisei Maru Gothic', sans-serif;
-    height: 2000px;
-}
-   
-ul {
-    list-style: none;
-}
+@import "intro";
+@import "news";
