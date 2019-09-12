@@ -1,0 +1,41 @@
+.menu-body {
+    width: 100vw;
+    background-image: url(../assets/img/p0026.png);
+    background-repeat: repeat;
+}
+
+.course-info {
+    position: absolute;
+    top: 82vh;
+    left: 0;
+    z-index: 1;
+    @include alignCenter();
+    &__inner {
+        position: relative;
+        width: 100vw;
+    }
+    &__container {
+        background: $whiteColorWeak;
+        width: 60vw;
+        margin: 0 auto;
+        padding: 17vh 7vw 30vh;
+        box-sizing: border-box;
+        h2 {
+            @include h2Title();
+            margin-bottom: 8rem;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    &__images {
+        position: absolute;
+        right: 0;
+        bottom: -62%;
+        &__img1 {
+            width: 70vw;
+            height: 70vh;
+            object-fit: cover;
+        }
+    }
+}
