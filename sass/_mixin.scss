@@ -1,0 +1,12 @@
+@mixin h2Title() {
+    text-align: center;
+    font-family: $fontSerif;
+    letter-spacing: 3px;
+    margin: 0 0 3rem 0;
+    color: $blackColor;
+}
+
+@mixin alignCenter() {
+    display: flex;
+    align-items: center;
+}
