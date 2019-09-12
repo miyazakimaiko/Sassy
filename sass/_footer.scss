@@ -1,0 +1,17 @@
+footer {
+    background: $blueColor;
+    color: $whiteColor;
+    padding: 2vh 3vw;
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        &__sns {
+            @include alignCenter();
+            li a {
+                color: $whiteColor;
+                margin-left: 1rem;
+
+            }
+        }
+    }
+}
