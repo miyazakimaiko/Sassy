@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>ウェイビー｜大阪・八尾の人気イタリアン居酒屋</title>
+
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
     <!-- Adobe fonts -->
@@ -22,6 +23,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -54,6 +56,12 @@
                     <a href="#">店舗情報</a></li>
             </ul>
         </nav><!-- .nav-bar -->
+
+        <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
 
     </header><!-- .site-header .flex-row-->
 
@@ -88,7 +96,7 @@
         </div>
 
         <div class="intro__images2">
-                <p><img class="intro__images2__img3" src="assets/img/compressed/waveee25.jpg" alt="slices of fresh ham"></p>
+            <p><img class="intro__images2__img3" src="assets/img/compressed/waveee25.jpg" alt="slices of fresh ham"></p>
         </div>
 
     </section>
@@ -96,47 +104,115 @@
     <!-- NEWS SECTION
      ======================================================================-->
     <section class="news">
-        <h2>NEWS</h2>
         <div class="news__container">
+            <h2>NEWS</h2>
             <ul>
                 <li>
                     <a class="news__container__a" href="#">
-                        <img src="assets/img/compressed/waveee1.jpg" alt=""></a></li>
+                        <img src="assets/img/compressed/waveee1.jpg" alt="">
+                        <div class="mask">
+                            <div class="mask__caption"><h4>◆貸切のお知らせ◇﻿９月15日(日)は18時〜21時まで貸切営業！﻿</h4></div>
+                        </div>
+                    </a>
+                </li>
                 <li>
                     <a class="news__container__a" href="#">
-                        <img src="assets/img/compressed/waveee6.jpg" alt=""></a></li>
-                <li>
-                    <a  class="news__container__a" href="#">
-                        <img src="assets/img/compressed/waveee23.jpg" alt=""></a></li>
+                        <img src="assets/img/compressed/waveee6.jpg" alt="">
+                        <div class="mask">
+                            <div class="mask__caption"><h4>◆貸切のお知らせ◇﻿９月15日(日)は18時〜21時まで貸切営業！﻿</h4></div>
+                        </div>
+                    </a>
+                </li>
                 <li>
                     <a class="news__container__a" href="#">
-                        <img src="assets/img/compressed/waveee21.jpg" alt=""></a></li>
+                        <img src="assets/img/compressed/waveee21.jpg" alt="">
+                        <div class="mask">
+                            <div class="mask__caption"><h4>◆貸切のお知らせ◇﻿９月15日(日)は18時〜21時まで貸切営業！﻿</h4></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="news__container__a" href="#">
+                        <img src="assets/img/compressed/waveee23.jpg" alt="">
+                        <div class="mask">
+                            <div class="mask__caption"><h4>◆貸切のお知らせ◇﻿９月15日(日)は18時〜21時まで貸切営業！﻿</h4></div>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- LOCATION SECTION
      ======================================================================-->
-    <section>
-
+    <section class="location">
+        <div class="location__container">
+            <h2>店舗情報</h2>
+            <div class="location__container__inner">
+                <div class="location__container__inner--map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.625425226139!2d135.62125421487426!3d34.61363219538482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012715cc3e38cf%3A0xc0970e5b9dce2910!2zV2F2ZWVlIOWFq-WwvuW4guOCpOOCv-ODquOCouODsw!5e0!3m2!1sja!2sie!4v1568297275446!5m2!1sja!2sie" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="location__container__inner--info">
+                    <p>住所: 大阪府八尾市柏村町4-6-4</p>
+                    <p>電話: 090-3949-1219</p> 
+                    <p>営業時間: 【水〜土】18:00～24:00(LO 23:30)</p>
+                    <p>【日、祝】18:00～23:00(LO 22:30)</p>
+                    <p>【 月、火】定休日</p>
+                    <p>※祝日の場合、営業</p>
+                    <p>日曜営業</p>
+                    <p>定休日: 月、火（祝日の場合、営業</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- GALLERY SECTION
      ======================================================================-->
-    <section>
-
+    <section class="gallery">
+        <template>
+            <hooper :itemsToShow="3" :infiniteScroll="true">
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+                <slide>
+                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                </slide>
+            </hooper>
+        </template>
     </section>
 
     <!-- FOOTER
      ======================================================================-->
     <footer>
-
+        <div class="footer__container">
+            <div class="footer__container__phone">
+                <p>ご予約は</p>
+                <p><big>090-3949-1219</big></p>
+                <p>までお問い合わせください♩</p>
+            </div>
+            <ul class="footer__container__sns">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
+            </ul>
+        </div>
     </footer>
 
     <!-- SCRIPTS
      ======================================================================-->
     <script src="https://kit.fontawesome.com/764611972e.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
 </body>
 </html>
