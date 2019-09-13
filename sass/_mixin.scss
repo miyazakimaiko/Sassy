@@ -6,7 +6,112 @@
     color: $blackColor;
 }
 
+@mixin pSmall() {
+    font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.2));
+    line-height: 4vh;
+}
+
 @mixin alignCenter() {
     display: flex;
     align-items: center;
+}
+
+@mixin bgWall() {
+    width: 100vw;
+    background-image: url(../assets/img/p0026.png);
+    background-repeat: repeat;
+}
+
+// Common hero section for menu, food page etc..
+@mixin secondaryHero($url) {
+    width: 100vw;
+    height: 120vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: $url;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    @media (max-width: 768px) {
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    }
+}
+
+@mixin mainAreaPosition() {
+    padding-top: 75vh;
+    z-index: 1;
+    @include alignCenter();
+    @media (max-width: 768px) {
+        padding-top: 43vh;
+    }
+    &__inner {
+        position: relative;
+        width: 100vw;
+    }
+}
+
+@mixin onWhiteBackground() {
+    background: $whiteColorWeak;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 17vh 3vw 30vh;
+    box-sizing: border-box;
+    @media (max-width: 1440px) {
+        max-width: 900px;
+    }
+    @media (max-width: 768px) {
+        width: 95vw;
+        padding: 13vh 7vw 22vh;
+    }
+    @media (max-width: 420px) {
+            padding-top: 9vh;
+            margin-bottom: 2vh;
+        }
+    h2 {
+        @include h2Title();
+        margin-bottom: 8rem;
+        @media (max-width: 768px) {
+            margin-bottom: 4rem;
+        }
+    }
+    &__about {
+        position: relative;
+        p {
+            text-align: center;
+        }
+        &__images {
+            position: absolute;
+            left: 70px;
+            bottom: -80vh;
+            width: 140%;
+            @media (max-width: 1768px) {
+                width: 115%; 
+            }
+            @media (max-width: 1420px) {
+                width: 105%; 
+            }
+            @media (max-width: 1260px) {
+                width: 100%; 
+            }
+            @media (max-width: 768px) {
+                width: 110%;
+                left: 0;
+                bottom: -55vh;
+            }
+            &__img1 {
+                max-width: 1200px;
+                width: 100%;
+                height: 70vh;
+                object-fit: cover;
+                @media (max-width: 768px) {
+                    height: 45vh;
+                }
+            }
+        }
+    }
 }

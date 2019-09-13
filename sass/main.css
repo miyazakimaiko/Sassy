@@ -667,13 +667,16 @@ footer .footer__container__sns li a {
   background-image: url(../assets/img/compressed/waveee3.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 0;
 }
 
 @media (max-width: 768px) {
   .course-hero {
-    height: 70vh;
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
   }
 }
 
@@ -684,9 +687,7 @@ footer .footer__container__sns li a {
 }
 
 .course-info {
-  position: absolute;
-  top: 82vh;
-  left: 0;
+  padding-top: 75vh;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,6 +697,12 @@ footer .footer__container__sns li a {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .course-info {
+    padding-top: 43vh;
+  }
+}
+
 .course-info__inner {
   position: relative;
   width: 100vw;
@@ -703,11 +710,31 @@ footer .footer__container__sns li a {
 
 .course-info__container {
   background: rgba(255, 255, 255, 0.7);
-  width: 60vw;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 17vh 7vw 30vh;
+  padding: 17vh 3vw 30vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  .course-info__container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-info__container {
+    width: 95vw;
+    padding: 13vh 7vw 22vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .course-info__container {
+    padding-top: 9vh;
+    margin-bottom: 2vh;
+  }
 }
 
 .course-info__container h2 {
@@ -719,24 +746,615 @@ footer .footer__container__sns li a {
   margin-bottom: 8rem;
 }
 
-.course-info__container p {
+@media (max-width: 768px) {
+  .course-info__container h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.course-info__container__about {
+  position: relative;
+}
+
+.course-info__container__about p {
   text-align: center;
 }
 
-.course-info__images {
+.course-info__container__about__images {
   position: absolute;
-  right: 0;
-  bottom: -62%;
+  left: 70px;
+  bottom: -80vh;
+  width: 140%;
 }
 
-.course-info__images__img1 {
-  width: 70vw;
+@media (max-width: 1768px) {
+  .course-info__container__about__images {
+    width: 115%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .course-info__container__about__images {
+    width: 105%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .course-info__container__about__images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-info__container__about__images {
+    width: 110%;
+    left: 0;
+    bottom: -55vh;
+  }
+}
+
+.course-info__container__about__images__img1 {
+  max-width: 1200px;
+  width: 100%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .course-info__container__about__images__img1 {
+    height: 45vh;
+  }
+}
+
 .course-contents {
-  padding-top: 120vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1540px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2vh 5vw;
+}
+
+@media (min-width: 1768px) {
+  .course-contents {
+    padding-top: 55vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  .course-contents {
+    padding-top: 65vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-contents {
+    padding-top: 40vh;
+  }
+}
+
+@media (max-width: 668px) {
+  .course-contents {
+    padding-top: 35vh;
+  }
+}
+
+@media (max-width: 328px) {
+  .course-contents {
+    padding-top: 38vh;
+  }
+}
+
+.course-contents__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10vh 0;
+}
+
+@media (max-width: 768px) {
+  .course-contents__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.course-contents__inner .course--1,
+.course-contents__inner .course--2 {
+  max-width: 40vw;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10vh 3vw 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .course-contents__inner .course--1,
+  .course-contents__inner .course--2 {
+    margin: 0 auto 2vh auto;
+    max-width: 100vw;
+    width: 100%;
+  }
+}
+
+.course-contents__inner .course--1 h2,
+.course-contents__inner .course--2 h2 {
+  text-align: center;
+  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin: 0 0 3rem 0;
+  color: #292929;
+  margin-bottom: 5rem;
+}
+
+.course-contents__inner .course--1 p,
+.course-contents__inner .course--2 p {
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.2));
+  line-height: 4vh;
+  text-align: center;
+  padding-bottom: 4vh;
+}
+
+.food-hero {
+  width: 100vw;
+  height: 120vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/compressed/waveee4.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .food-hero {
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  }
+}
+
+.food-info {
+  padding-top: 75vh;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .food-info {
+    padding-top: 43vh;
+  }
+}
+
+.food-info__inner {
+  position: relative;
+  width: 100vw;
+}
+
+.food-info__container {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 17vh 3vw 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 5vh;
+  margin-bottom: 12vh;
+}
+
+@media (max-width: 1440px) {
+  .food-info__container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-info__container {
+    width: 95vw;
+    padding: 13vh 7vw 22vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .food-info__container {
+    padding-top: 9vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.food-info__container h2 {
+  text-align: center;
+  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin: 0 0 3rem 0;
+  color: #292929;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .food-info__container h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.food-info__container__about {
+  position: relative;
+}
+
+.food-info__container__about p {
+  text-align: center;
+}
+
+.food-info__container__about__images {
+  position: absolute;
+  left: 70px;
+  bottom: -80vh;
+  width: 140%;
+}
+
+@media (max-width: 1768px) {
+  .food-info__container__about__images {
+    width: 115%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .food-info__container__about__images {
+    width: 105%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .food-info__container__about__images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-info__container__about__images {
+    width: 110%;
+    left: 0;
+    bottom: -55vh;
+  }
+}
+
+.food-info__container__about__images__img1 {
+  max-width: 1200px;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .food-info__container__about__images__img1 {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-info__container {
+    padding: 9vh 1vw 1vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.food-info__container__about {
+  padding: 0 4vw;
+}
+
+.food-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vh 0;
+  border-bottom: 1px solid;
+}
+
+@media (max-width: 660px) {
+  .food-sec {
+    display: block;
+  }
+}
+
+.food-sec:first-child {
+  padding-top: 0;
+}
+
+.food-sec:last-child {
+  border-bottom: none;
+}
+
+.food-sec__ul {
+  padding-right: 4vw;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.food-sec__ul li {
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.2));
+  line-height: 4vh;
+}
+
+.food-sec__ul__title {
+  display: inline-block;
+  border-bottom: double 3px;
+  margin-bottom: 3vh;
+}
+
+.food-sec__img {
+  width: 350px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .food-sec__img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 660px) {
+  .food-sec__img {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+.food-sec__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.drink-hero {
+  width: 100vw;
+  height: 120vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/compressed/waveee27.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .drink-hero {
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  }
+}
+
+.drink-info {
+  padding-top: 75vh;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .drink-info {
+    padding-top: 43vh;
+  }
+}
+
+.drink-info__inner {
+  position: relative;
+  width: 100vw;
+}
+
+.drink-info__container {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 17vh 3vw 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 5vh;
+  margin-bottom: 12vh;
+}
+
+@media (max-width: 1440px) {
+  .drink-info__container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drink-info__container {
+    width: 95vw;
+    padding: 13vh 7vw 22vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .drink-info__container {
+    padding-top: 9vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.drink-info__container h2 {
+  text-align: center;
+  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin: 0 0 3rem 0;
+  color: #292929;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .drink-info__container h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.drink-info__container__about {
+  position: relative;
+}
+
+.drink-info__container__about p {
+  text-align: center;
+}
+
+.drink-info__container__about__images {
+  position: absolute;
+  left: 70px;
+  bottom: -80vh;
+  width: 140%;
+}
+
+@media (max-width: 1768px) {
+  .drink-info__container__about__images {
+    width: 115%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .drink-info__container__about__images {
+    width: 105%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .drink-info__container__about__images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .drink-info__container__about__images {
+    width: 110%;
+    left: 0;
+    bottom: -55vh;
+  }
+}
+
+.drink-info__container__about__images__img1 {
+  max-width: 1200px;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .drink-info__container__about__images__img1 {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .drink-info__container {
+    padding: 9vh 1vw 1vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.drink-info__container__about {
+  padding: 0 4vw;
+}
+
+.drink-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vh 0;
+  border-bottom: 1px solid;
+}
+
+@media (max-width: 660px) {
+  .drink-sec {
+    display: block;
+  }
+}
+
+.drink-sec:first-child {
+  padding-top: 0;
+}
+
+.drink-sec:last-child {
+  border-bottom: none;
+}
+
+.drink-sec__ul {
+  padding-right: 4vw;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.drink-sec__ul li {
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.2));
+  line-height: 4vh;
+}
+
+.drink-sec__ul__title {
+  display: inline-block;
+  border-bottom: double 3px;
+  margin-bottom: 3vh;
+}
+
+.drink-sec__img {
+  width: 350px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .drink-sec__img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 660px) {
+  .drink-sec__img {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+.drink-sec__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
