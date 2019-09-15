@@ -294,7 +294,7 @@ footer .footer__container__sns li a {
   position: absolute;
   bottom: 9vh;
   left: 13vw;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   color: white;
   text-shadow: 1px 2px 3px #808080;
 }
@@ -334,7 +334,7 @@ footer .footer__container__sns li a {
 }
 
 .intro__container--1 h2 {
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   margin: 0 0 10vh 0;
 }
 
@@ -474,7 +474,7 @@ footer .footer__container__sns li a {
 
 .news__container h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -587,7 +587,7 @@ footer .footer__container__sns li a {
 
 .location__container h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -739,7 +739,7 @@ footer .footer__container__sns li a {
 
 .course-info__container h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -887,7 +887,7 @@ footer .footer__container__sns li a {
 .course-contents__inner .course--1 h2,
 .course-contents__inner .course--2 h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -980,7 +980,7 @@ footer .footer__container__sns li a {
 
 .food-info__container h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -1208,7 +1208,7 @@ footer .footer__container__sns li a {
 
 .drink-info__container h2 {
   text-align: center;
-  font-family: "Toppan Bunkyu Midashi Mincho", 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 3px;
   margin: 0 0 3rem 0;
   color: #292929;
@@ -1284,19 +1284,22 @@ footer .footer__container__sns li a {
 }
 
 .drink-info__container__about {
-  padding: 0 4vw;
-}
-
-.drink-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 1vw;
+}
+
+@media (max-width: 375px) {
+  .drink-info__container__about {
+    display: block;
+  }
+}
+
+.drink-sec {
   padding: 3vh 0;
   border-bottom: 1px solid;
 }
@@ -1356,5 +1359,334 @@ footer .footer__container__sns li a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.drink-sec-wrapper--left,
+.drink-sec-wrapper--right {
+  max-width: 47%;
+}
+
+@media (max-width: 375px) {
+  .drink-sec-wrapper--left,
+  .drink-sec-wrapper--right {
+    max-width: 100%;
+  }
+}
+
+.news-hero {
+  width: 100vw;
+  height: 80vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/compressed/waveee28.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .news-hero {
+    background-size: contain;
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  }
+}
+
+.news-info {
+  padding-top: 75vh;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60vh;
+}
+
+@media (max-width: 768px) {
+  .news-info {
+    padding-top: 43vh;
+  }
+}
+
+.news-info__inner {
+  position: relative;
+  width: 100vw;
+}
+
+.news-info__container {
+  padding-bottom: 5vh;
+  margin-bottom: 12vh;
+}
+
+@media (max-width: 768px) {
+  .news-info__container {
+    padding: 9vh 1vw 1vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.news-info__container__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 1vw;
+}
+
+@media (max-width: 375px) {
+  .news-info__container__about {
+    display: block;
+  }
+}
+
+.news-sec-wrapper--left {
+  padding: 0;
+}
+
+.news-sec-wrapper--left .news-sec {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 17vh 3vw 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 4vh;
+  padding: 10vh 2vw;
+}
+
+@media (max-width: 1440px) {
+  .news-sec-wrapper--left .news-sec {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--left .news-sec {
+    width: 95vw;
+    padding: 13vh 7vw 22vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .news-sec-wrapper--left .news-sec {
+    padding-top: 9vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.news-sec-wrapper--left .news-sec h2 {
+  text-align: center;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin: 0 0 3rem 0;
+  color: #292929;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--left .news-sec h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.news-sec-wrapper--left .news-sec__about {
+  position: relative;
+}
+
+.news-sec-wrapper--left .news-sec__about p {
+  text-align: center;
+}
+
+.news-sec-wrapper--left .news-sec__about__images {
+  position: absolute;
+  left: 70px;
+  bottom: -80vh;
+  width: 140%;
+}
+
+@media (max-width: 1768px) {
+  .news-sec-wrapper--left .news-sec__about__images {
+    width: 115%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .news-sec-wrapper--left .news-sec__about__images {
+    width: 105%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .news-sec-wrapper--left .news-sec__about__images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--left .news-sec__about__images {
+    width: 110%;
+    left: 0;
+    bottom: -55vh;
+  }
+}
+
+.news-sec-wrapper--left .news-sec__about__images__img1 {
+  max-width: 1200px;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--left .news-sec__about__images__img1 {
+    height: 45vh;
+  }
+}
+
+.news-sec-wrapper--left .news-sec h2 {
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 1vh;
+  border-bottom: 1px dashed;
+}
+
+.news-sec-wrapper--left .news-sec .news-infos {
+  margin-bottom: 3vh;
+}
+
+.news-sec-wrapper--left .news-sec .news-infos small {
+  margin-right: 2rem;
+}
+
+.news-sec-wrapper--left .news-sec__read-more-btn {
+  text-align: right;
+  margin-top: 4vh;
+  margin-right: 2vw;
+}
+
+.news-sec-wrapper--left .news-sec__read-more-btn a {
+  padding: 1vh 1vw;
+  text-decoration: none;
+  border-bottom: none;
+  border: 1px solid;
+  color: inherit;
+}
+
+.news-sec-wrapper--right {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 17vh 3vw 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  .news-sec-wrapper--right {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--right {
+    width: 95vw;
+    padding: 13vh 7vw 22vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .news-sec-wrapper--right {
+    padding-top: 9vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.news-sec-wrapper--right h2 {
+  text-align: center;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin: 0 0 3rem 0;
+  color: #292929;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--right h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.news-sec-wrapper--right__about {
+  position: relative;
+}
+
+.news-sec-wrapper--right__about p {
+  text-align: center;
+}
+
+.news-sec-wrapper--right__about__images {
+  position: absolute;
+  left: 70px;
+  bottom: -80vh;
+  width: 140%;
+}
+
+@media (max-width: 1768px) {
+  .news-sec-wrapper--right__about__images {
+    width: 115%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .news-sec-wrapper--right__about__images {
+    width: 105%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .news-sec-wrapper--right__about__images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--right__about__images {
+    width: 110%;
+    left: 0;
+    bottom: -55vh;
+  }
+}
+
+.news-sec-wrapper--right__about__images__img1 {
+  max-width: 1200px;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .news-sec-wrapper--right__about__images__img1 {
+    height: 45vh;
+  }
+}
+
+.news-sec-wrapper--right {
+  width: 35%;
+}
+
+.news-sec-wrapper--left {
+  width: 60%;
 }
 /*# sourceMappingURL=main.css.map */

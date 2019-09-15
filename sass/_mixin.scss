@@ -42,6 +42,26 @@
     }
 }
 
+@mixin tertiaryHero($url) {
+    width: 100vw;
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: $url;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    @media (max-width: 768px) {
+        background-size: contain;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    }
+}
+
 @mixin mainAreaPosition() {
     padding-top: 75vh;
     z-index: 1;
