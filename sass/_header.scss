@@ -3,23 +3,29 @@
     justify-content: $justify;
 }
 
+.header-transition {
+    background: $blueColor;
+    height: 7vh;
+}
+
 header {
     @include flex(space-between);
     font-family: $fontTsukushi;
     width: 100vw;
-    padding: 15px 30px;
+    height: 10vh;
     box-sizing: border-box;
     background: transparent;
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: all .5s ease-in-out;
     z-index: 2;
-
     .header-logo {
         font-family: 'Leckerli One', cursive;
+        width: 20%;
         a {
-            display: flex;
+            @include alignCenter();
+            justify-content: center;
             color: $whiteColor;
             text-decoration: none;
             p {
@@ -38,14 +44,24 @@ header {
         }
     }
 
-    .nav-bar {
-        @include alignCenter();
-        ul {
-            display: flex;
+    .open {
+        clip-path: circle(1100px at 100% -10%);
+    }
+
+    nav {
+        position: relative;
+        width: 50vw;
+        @media (max-width: 768px) {
+            position: fixed;
+            background: $blueColor;
+            height: 100vh;
+            width: 100%;
+            clip-path: circle(90px at 110% -10%);
+            transition: all 1s ease-out;
+        }
+        .nav-links {
+            @include alignCenter();
             margin: 0;
-            li {
-                padding-right: 3rem;
-            }
             li a {
                 text-decoration: none;
                 color: $whiteColor;
@@ -54,63 +70,69 @@ header {
                     color: $hoverColor;
                 }
             }
+            @media (max-width: 768px) {
+                flex-direction: column;
+                li a {
+                    font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+                }
+            }
         }
-        @media (max-width: 768px) {
+    }
+
+    .menu-trigger-wrapper {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        .menu-trigger,
+        .menu-trigger span {
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+        .menu-trigger {
             display: none;
-        }
-    }
-
-    .menu-trigger,
-    .menu-trigger span {
-        transition: all .4s;
-        box-sizing: border-box;
-    }
-
-    .menu-trigger {
-        display: none;
-        position: relative;
-        width: 40px;
-        height: 33px;
-        span {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 4px;
-            &:nth-of-type(1) {
-                top: 9px;
-            }
-            &:nth-of-type(2) {
-                top: 22px;
-            }
-            &:nth-of-type(3) {
-                bottom: -5px;
-            }
-        }
-
-        &.active {
+            position: relative;
+            width: 40px;
+            height: 30px;
+            cursor: pointer; 
             span {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 4px;
                 &:nth-of-type(1) {
-                    -webkit-transform: translateY(20px) rotate(-45deg);
-                    transform: translateY(20px) rotate(-45deg);
+                    top: 0;
                 }
                 &:nth-of-type(2) {
-                    opacity: 0;
+                    top: 10px;
                 }
                 &:nth-of-type(3) {
-                    -webkit-transform: translateY(-20px) rotate(45deg);
-                    transform: translateY(-20px) rotate(45deg);
+                    top: 20px;
                 }
             }
-        }
-
-        @media (max-width: 768px) {
-            display: block;
+            &.active {
+                span {
+                    &:nth-of-type(1) {
+                        -webkit-transform: translateY(20px) rotate(-45deg);
+                        transform: translateY(20px) rotate(-45deg);
+                    }
+                    &:nth-of-type(2) {
+                        opacity: 0;
+                    }
+                    &:nth-of-type(3) {
+                        -webkit-transform: translateY(-20px) rotate(45deg);
+                        transform: translateY(-20px) rotate(45deg);
+                    }
+                }
+            }
+            @media (max-width: 768px) {
+                display: block;
+            }
         }
     }
 }
-   
-
 
 
