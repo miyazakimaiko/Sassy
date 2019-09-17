@@ -1,0 +1,25 @@
+.news-info {
+    @include mainAreaPosition();
+    padding-top: 60vh;
+    &__container {
+        padding-bottom: 5vh;
+        margin-bottom: 12vh;
+        @media (max-width: 768px) {
+            padding: 9vh 1vw 1vh;
+            margin-bottom: 2vh;
+        }
+        &__about {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1170px;
+            margin: auto;
+            padding: 0 1vw;
+            @media (max-width: 768px) {
+                display: block;
+            }
+            @media (max-width: 375px) {
+                display: block;
+            }
+        }
+    }
+}
