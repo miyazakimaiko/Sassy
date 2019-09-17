@@ -14,6 +14,8 @@
 @mixin alignCenter() {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
 @mixin bgWall() {
@@ -56,7 +58,7 @@
     z-index: 0;
 
     @media (max-width: 768px) {
-        background-size: contain;
+        background-size: cover;
         height: 60vh;
         clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
     }
