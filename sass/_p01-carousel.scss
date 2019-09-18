@@ -1,0 +1,23 @@
+.carousel-container {
+    width:100vw;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        @media (max-width: 768px) {
+            height: 40vh;
+        }
+    }
+}
+
+.hooper {
+    height: 360px !important;
+    @media (max-width: 768px) {
+        height: 40vh !important;
+    }
+}
