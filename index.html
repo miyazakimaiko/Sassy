@@ -9,20 +9,10 @@
     <title>ウェイビー｜大阪・八尾の人気イタリアン居酒屋</title>
 
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
-    <!-- Adobe fonts -->
-    <script>
-    (function(d) {
-        var config = {
-        kitId: 'lqi6bkk',
-        scriptTimeout: 3000,
-        async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -69,8 +59,8 @@
 
     <!-- HERO
      ======================================================================-->
-    <section class="hero">
-        <h1>大阪・八尾の<br>隠れ家イタリアン。</h1>
+    <section class="hero" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">大阪・八尾の<br>隠れ家イタリアン。</h1>
     </section>
 
     <!-- INTRO SECTION
@@ -78,27 +68,29 @@
     <section class="intro">
 
         <div class="intro__container--1">
-            <h2><small>ダイニング・バー</small> <big>ウェイビー</big></h2>
-            <p>ウェイビーは、近鉄高安にある、<br>八尾市のワイン居酒屋です🍴</p>
-            <p>日本、海外で10年料理を勉強したシェフと<br>バーテンダー兼ソムリエが<br>元気にお客様をお迎えいたします！</p>
-            <p>いつもよりちょっとだけオシャレに♡<br>女子会、誕生日会、 もちろんお一人様でもOKです◎ <br>ワインに合うお料理が豊富なお店♩</p>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2><small>ダイニング・バー</small> <big>ウェイビー</big></h2>
+                <p>ウェイビーは、近鉄高安にある、<br>八尾市のワイン居酒屋です🍴</p>
+                <p>日本、海外で10年料理を勉強したシェフと<br>バーテンダー兼ソムリエが<br>元気にお客様をお迎えいたします！</p>
+                <p>いつもよりちょっとだけオシャレに♡<br>女子会、誕生日会、 もちろんお一人様でもOKです◎ <br>ワインに合うお料理が豊富なお店♩</p>
+            </div>
         </div>
 
         <div class="intro__container--2">
             <ul>
-                <li><a href="#">Course Menu  コースメニュー</a></li>
-                <li><a href="#">Food Menu  単品メニュー</a></li>
-                <li><a href="#">Drink Menu  ドリンクメニュー</a></li>
+                <li data-aos="fade-up" data-aos-duration="1000"><a href="#">Course Menu  コースメニュー</a></li>
+                <li data-aos="fade-up" data-aos-duration="1000"><a href="#">Food Menu  単品メニュー</a></li>
+                <li data-aos="fade-up" data-aos-duration="1000"><a href="#">Drink Menu  ドリンクメニュー</a></li>
             </ul>
         </div>
 
         <div class="intro__images1">
-            <p><img class="intro__images1__img1" src="assets/img/compressed/waveee13.jpg" alt="slices of fresh ham"></p>
-            <p><img class="intro__images1__img2" src="assets/img/compressed/waveee12.jpg" alt="Fried cheese"></p>
+            <p data-aos="fade-up" data-aos-duration="1000"><img class="intro__images1__img1" src="assets/img/compressed/waveee13.jpg" alt="slices of fresh ham"></p>
+            <p data-aos="fade-up" data-aos-duration="1000"><img class="intro__images1__img2" src="assets/img/compressed/waveee12.jpg" alt="Fried cheese"></p>
         </div>
 
         <div class="intro__images2">
-            <p><img class="intro__images2__img3" src="assets/img/compressed/waveee25.jpg" alt="slices of fresh ham"></p>
+            <p data-aos="fade-up" data-aos-duration="1000"><img class="intro__images2__img3" src="assets/img/compressed/waveee25.jpg" alt="slices of fresh ham"></p>
         </div>
 
     </section>
@@ -107,8 +99,8 @@
      ======================================================================-->
     <section class="news">
         <div class="news__container">
-            <h2>NEWS</h2>
-            <ul>
+            <h2 data-aos="fade-up" data-aos-duration="1000">NEWS</h2>
+            <ul data-aos="fade-up" data-aos-duration="1000">
                 <li>
                     <a class="news__container__a" href="#">
                         <img src="assets/img/compressed/waveee1.jpg" alt="">
@@ -149,8 +141,8 @@
      ======================================================================-->
     <section class="location">
         <div class="location__container">
-            <h2>店舗情報</h2>
-            <div class="location__container__inner">
+            <h2 data-aos="fade-up" data-aos-duration="1000">店舗情報</h2>
+            <div class="location__container__inner" data-aos="fade-up" data-aos-duration="1000">
                 <div class="location__container__inner--map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.625425226139!2d135.62125421487426!3d34.61363219538482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012715cc3e38cf%3A0xc0970e5b9dce2910!2zV2F2ZWVlIOWFq-WwvuW4guOCpOOCv-ODquOCouODsw!5e0!3m2!1sja!2sie!4v1568297275446!5m2!1sja!2sie" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
@@ -170,29 +162,28 @@
 
     <!-- GALLERY SECTION
      ======================================================================-->
-    <section class="gallery">
-        <template>
-            <hooper :itemsToShow="3" :infiniteScroll="true">
+    <section class="carousel">
+        <div class="carousel-container" id="app" data-aos="fade-up" data-aos-duration="1000">
+            <hooper class="carousel-slide" :settings="hooperSettings">
                 <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                    <img src="./assets/img/compressed/waveee11.jpg" alt="">
                 </slide>
-                <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                <slide>          
+                    <img src="./assets/img/compressed/waveee12.jpg" alt=""> 
                 </slide>
-                <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                <slide>          
+                    <img src="./assets/img/compressed/waveee13.jpg" alt="">          
                 </slide>
-                <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                <slide>  
+                    <img src="./assets/img/compressed/waveee14.jpg" alt="">      
+                <slide>     
+                    <img src="./assets/img/compressed/waveee15.jpg" alt="">
                 </slide>
-                <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
-                </slide>
-                <slide>
-                    <img src="assets/img/compressed/waveee12.jpg" alt="">
+                <slide>            
+                    <img src="./assets/img/compressed/waveee16.jpg" alt="">
                 </slide>
             </hooper>
-        </template>
+        </div>
     </section>
 
     <!-- FOOTER
@@ -215,7 +206,47 @@
     <!-- SCRIPTS
      ======================================================================-->
     <script src="https://kit.fontawesome.com/764611972e.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.min.js"></script>
     <script src="main.js"></script>
+    <script>
+    new Vue({
+        el: "#app",
+        components: {
+            Hooper: window.Hooper.Hooper,
+            Slide: window.Hooper.Slide
+        },
+        data() {
+            return {
+                hooperSettings: {
+                    infiniteScroll: true,
+                    centerMode: true,
+                    autoPlay: true,
+                    playSpeed: 3500,
+                    breakpoints: {
+                        2400: {
+                            itemsToShow: 5
+                        },
+                        1800: {
+                            itemsToShow: 4
+                        },
+                        1500: {
+                            itemsToShow: 3
+                        },
+                        1100: {
+                            itemsToShow: 2.5
+                        },
+                        600: {
+                            itemsToShow: 1.5
+                        },
+                        0: {
+                            itemsToShow: 1
+                        }
+                    }
+                }   
+            }
+        }
+    })
+    </script>
 </body>
 </html>
