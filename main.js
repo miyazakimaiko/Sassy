@@ -6,10 +6,11 @@ window.onscroll = () => {
 }
 
 function headerShrink() {
-    const pos = document.documentElement.scrollTop;
+    const pos1 = document.documentElement.scrollTop;
+    const pos2 = document.body.scrollTop;
     const header = document.querySelector(".header");
 
-    if( pos > (window.innerHeight/2) ) {
+    if( pos1 > (window.innerHeight/2) || pos2 > (window.innerHeight/2) ) {
         header.style.backgroundColor = "rgba(27,32,48,1)";
         header.style.height = "7vh";
     } else {

@@ -85,6 +85,11 @@ p {
   letter-spacing: 1px;
 }
 
+.open {
+  -webkit-clip-path: circle(1300px at 120% -20%);
+          clip-path: circle(1300px at 120% -20%);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,10 +114,12 @@ header {
 header .header-logo {
   font-family: 'Leckerli One', cursive;
   width: 20%;
+  height: 100%;
   padding-left: 10px;
 }
 
 header .header-logo a {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,11 +163,6 @@ header .header-logo a h1 {
   text-shadow: 1px 2px 3px #1b2030;
 }
 
-header .open {
-  -webkit-clip-path: circle(1100px at 100% -10%);
-          clip-path: circle(1100px at 100% -10%);
-}
-
 header nav {
   position: relative;
   width: 50vw;
@@ -169,11 +171,15 @@ header nav {
 @media (max-width: 768px) {
   header nav {
     position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     background: #1b2030;
     height: 100vh;
-    width: 100%;
-    -webkit-clip-path: circle(90px at 110% -10%);
-            clip-path: circle(90px at 110% -10%);
+    width: 100vw;
+    z-index: 1;
+    -webkit-clip-path: circle(90px at 120% -20%);
+            clip-path: circle(90px at 120% -20%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
@@ -190,6 +196,7 @@ header nav .nav-links {
       justify-content: space-around;
   height: 100%;
   margin: 0;
+  width: 100%;
 }
 
 header nav .nav-links li {
@@ -219,7 +226,7 @@ header .menu-trigger-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
+  width: 50%;
   z-index: 2;
 }
 
@@ -228,6 +235,9 @@ header .menu-trigger-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -242,6 +252,7 @@ header .menu-trigger-wrapper .menu-trigger span {
 header .menu-trigger-wrapper .menu-trigger {
   display: block;
   width: 40px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -317,12 +328,6 @@ footer .footer__container__sns li a {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh;
-  }
-}
-
 .hero .slide-container {
   position: fixed;
   z-index: -1;
@@ -345,12 +350,6 @@ footer .footer__container__sns li a {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
-  .hero .slide-container .slide-wrap .slide-item {
-    height: 70vh;
-  }
-}
-
 .hero .slide-container .slide-wrap .slide-item:not(:first-child) {
   position: absolute;
   top: 0;
@@ -371,12 +370,6 @@ footer .footer__container__sns li a {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .hero .slide-container .slide-wrap .slide-item img {
-    height: 70vh;
-  }
 }
 
 .hero::before {
@@ -800,11 +793,6 @@ footer .footer__container__sns li a {
 .course-hero {
   width: 100vw;
   height: 120vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/img/compressed/waveee3.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   position: absolute;
@@ -818,6 +806,16 @@ footer .footer__container__sns li a {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
   }
+}
+
+.course-hero img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .menu-body {
@@ -1048,11 +1046,6 @@ footer .footer__container__sns li a {
 .food-hero {
   width: 100vw;
   height: 120vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/img/compressed/waveee4.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   position: absolute;
@@ -1066,6 +1059,16 @@ footer .footer__container__sns li a {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
   }
+}
+
+.food-hero img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .food-info {
@@ -1279,11 +1282,6 @@ footer .footer__container__sns li a {
 .drink-hero {
   width: 100vw;
   height: 120vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/img/compressed/waveee27.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   position: absolute;
@@ -1297,6 +1295,16 @@ footer .footer__container__sns li a {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
   }
+}
+
+.drink-hero img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .drink-info {
@@ -1524,26 +1532,31 @@ footer .footer__container__sns li a {
 
 .news-hero {
   width: 100vw;
-  height: 80vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../assets/img/compressed/waveee28.jpg);
+  height: 120vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   position: absolute;
   top: 0;
   z-index: 0;
+  height: 80vh;
 }
 
 @media (max-width: 768px) {
   .news-hero {
-    background-size: cover;
     height: 60vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
   }
+}
+
+.news-hero img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .news-info {
