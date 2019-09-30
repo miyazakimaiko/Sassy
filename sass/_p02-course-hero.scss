@@ -1,3 +1,6 @@
 .course-hero {
-    @include secondaryHero(url(../assets/img/compressed/waveee3.jpg));
+    @include secondaryHero();
+    img {
+        @include heroImage();
+    }
 }

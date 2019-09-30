@@ -1,3 +1,7 @@
 .news-hero {
-    @include tertiaryHero(url(../assets/img/compressed/waveee28.jpg));
+    @include secondaryHero();
+    height: 80vh;
+    img {
+        @include heroImage();
+    }
 }

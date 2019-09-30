@@ -1,3 +1,6 @@
 .drink-hero {
-    @include secondaryHero(url(../assets/img/compressed/waveee27.jpg));
+    @include secondaryHero();
+    img {
+        @include heroImage();
+    }
 }
