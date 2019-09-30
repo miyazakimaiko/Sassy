@@ -27,7 +27,7 @@
         <!-- LOGO -->
         <div class="header-logo">
             <a href="#">
-                <p><img src="assets/img/フォークとナイフとスプーンのお食事アイコン素材.png" alt="waveee logo"></p>
+                <p><img src="assets/img/logo.png" alt="waveee logo"></p>
                 <h1>Waveee</h1>
             </a>
         </div>
@@ -62,7 +62,6 @@
                 <li class="slide-item"><img src="assets/img/compressed/waveee3.jpg" alt=""></li>
                 <li class="slide-item"><img src="assets/img/compressed/waveee27.jpg" alt=""></li>
                 <li class="slide-item"><img src="assets/img/compressed/waveee11.jpg" alt=""></li>
-                <li class="slide-item"><img src="assets/img/compressed/waveee29.jpg" alt=""></li>
             </ul>
         </div>
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">大阪・八尾の<br>隠れ家イタリアン。</h1>
@@ -169,25 +168,27 @@
      ======================================================================-->
     <section class="carousel">
         <div class="carousel-container" id="app" data-aos="fade-up" data-aos-duration="1000">
-            <hooper class="carousel-slide" :settings="hooperSettings">
-                <slide>
-                    <img src="./assets/img/compressed/waveee11.jpg" alt="">
-                </slide>
-                <slide>          
-                    <img src="./assets/img/compressed/waveee12.jpg" alt=""> 
-                </slide>
-                <slide>          
-                    <img src="./assets/img/compressed/waveee13.jpg" alt="">          
-                </slide>
-                <slide>  
-                    <img src="./assets/img/compressed/waveee14.jpg" alt="">      
-                <slide>     
-                    <img src="./assets/img/compressed/waveee15.jpg" alt="">
-                </slide>
-                <slide>            
-                    <img src="./assets/img/compressed/waveee16.jpg" alt="">
-                </slide>
-            </hooper>
+            <template>
+                <hooper class="carousel-slide" :settings="hooperSettings">
+                    <slide>
+                        <img src="./assets/img/compressed/waveee11.jpg" alt="">
+                    </slide>
+                    <slide>          
+                        <img src="./assets/img/compressed/waveee12.jpg" alt=""> 
+                    </slide>
+                    <slide>          
+                        <img src="./assets/img/compressed/waveee13.jpg" alt="">          
+                    </slide>
+                    <slide>  
+                        <img src="./assets/img/compressed/waveee14.jpg" alt="">      
+                    <slide>     
+                        <img src="./assets/img/compressed/waveee15.jpg" alt="">
+                    </slide>
+                    <slide>            
+                        <img src="./assets/img/compressed/waveee16.jpg" alt="">
+                    </slide>
+                </hooper>
+            </template>
         </div>
     </section>
 
@@ -212,9 +213,12 @@
      ======================================================================-->
     <script src="https://kit.fontawesome.com/764611972e.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.min.js"></script>
     <script src="main.js"></script>
+    <script>
+    
+    </script>
     <script>
     new Vue({
         el: "#app",
